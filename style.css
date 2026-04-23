@@ -1,0 +1,60 @@
+body {
+.container {
+    margin-top: 30px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-board {
+    width: 360px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #8b4513;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mole {
+    width: 80px;
+    height: 80px;
+    background-color: #654321;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -80px;
+    left: 10px;
+    transition: 0.3s;
+}
+
+.hole.active .mole {
+    bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
